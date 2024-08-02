@@ -1,46 +1,63 @@
 ## Healthcare-Data-Analytics
-#### Power BI dashboard to NY Hospital Efficiency in Elective Hip Replacement
+#### Hospital Efficency Analysis with New York State Data
 
-### [Power BI dashboard to NY Hospital Efficiency in Elective Hip Replacement](https://app.powerbi.com/view?r=eyJrIjoiN2ZhMzBmMmItOTU0Ni00ZGRlLWEzMjAtYTdjMmY0ODYzNDNhIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9&pageName=133a73de4581df2c8d13)
+### [Power BI dashboard: NY Hospital Efficiency in Elective Hip Replacement](https://app.powerbi.com/view?r=eyJrIjoiN2ZhMzBmMmItOTU0Ni00ZGRlLWEzMjAtYTdjMmY0ODYzNDNhIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9&pageName=133a73de4581df2c8d13)
 
-![KPI view](https://github.com/Sophie-XL/Insurance-BI-Dashboard/assets/146779290/d15f72d4-0259-49df-9316-31030817516c)
+![Length of Stay (LOS) Comparison Page](https://github.com/user-attachments/assets/9500c054-5ec4-487e-9327-dde6fe2b5b4a)
+
 
 **************************
 
 ## Project Description:
 
-Shield Insurance is an insurance company who wants to understand the number of customers they have and the total revenue they are generating on a month by month basis. In the dashboard the following features are included:
+In healthcare, improving efficiency while maintaining high-quality patient care is a top priority. HealthStat is a consulting company that explores in patient dataset to uncover hospital efficiency insights. In this project, I analyzed an anonymized dataset from hospitals to uncover insights on potential hospital efficency opportunities.
 
-1. KPIs Page: total customers, total revenue, daily revenue growth, and daily customer growth
-   - [x] Track Month over month change on key metrics
-   - [x] Customer segmentation based on their age groups
-   - [x] Analyze revenue & customer number by city & age group
-   - [x] Switch between revenue and customer to analyze trends in customer & revenue growth over time
-   - [x] Use filters to analyze sales mode, age group, city, month and policy ID
-2. Sales mode analysis Page: 
-   - [x] analyze total customers and total revenue split percentages by sales mode
-   - [x] analyze the trend of sales mode over the month
-3. Age group analysis Page: analyze age group data to understand expected settlement, sales mode, and policy preference
+In the dashboard the following features are included:
+
+1. The Dataset:
+   - [x] New York State-wide hospital discharge data for elective hip replacement surgery patients in 2016
+   - [x] One table with 30 columns and 26286 rows of patient demographic, diagonosis, hospital stay, hostiptal cost, etc. data
+2. Home Page: Navigation bar to LOS, Cost Comparison and Hospital Profile pages
+3. LOS Comparison Page: Length of stay (LOS) is the duration in days for a patient stay in a hospital. Reducing LOS can lower costs, increase capacity, and improve throughput.
+   - [x] Tracked average LOS of 151 hospitals in New York state and compared it with state-wide LOS averages
+   - [x] Tracked Total Surgeons, Average LOS, Total Hospitals and Total Discharges with options to filter for 8 different Health Sercie Areas in New York State
+   - [x] Highlighted top 3 and bottom 3 hospitals in terms of LOS in clustered bar charts including % variance to state average in tooltips
+   - [x] Identified key influencers and segmentations for LOS considering key factors like risk of mortality, severity of illness, diagnosis, patient demography, hospital size and location, etc.
+4. Cost Comparison Page: Average cost per discharge is defined as total costs / total discharges. It is a useful benchmark to compare cost efficiency between hospitals.
+   - [x] Tracked Average Cost per Discharge, Average LOS, Total Hospitals and Total Discharges with options to filter for 8 different Health Sercie Areas in New York State
+   - [x] Showed the relationship betoween Average LOS and Average Cost per Discharge in a bubble chart with options to drill down into 8 different Health Sercie Areas in New York State
+   - [x] Highlighted top 3 and bottom 3 hospitals in terms of Cost in clustered bar charts including % variance to state average in tooltips
+   - [x] Identified key influencers and segmentations for cost considering key factors like risk of mortality, severity of illness, diagnosis, patient demography, hospital size and location, etc.
+5. Hospital Profile Page: Hospital efficiency KPIs for each hospital
+   - [x] Gauge charts for LOS and Cost 
+   - [x] Clustered column charts for Total Discharges vs. Illness Severity and Risk of Mortality
+   - [x] Donut charts for Total Discharges distribution across diagonsis and patient disposition
 
 **************************
 
 ## Project Key Insights:
 
-- [x] March 2023 is a blockbuster month. Both revenue and customer skyrocketed. 
-- [x] Offline Agent is the Champion in sles mode, however online app and online website channels are fast growing.
-- [x] 31-40 age group is the biggest customer segment for Shield Insurance.
+- [x] Top influencers increasing average LOS and cost:
+      Extreme illness severity
+      Extreme/ Major mortality risk
+      Hospitals in New York City
+      Patient disposition to skilled nursing home 
+- [x] NYC hospitals stand out with highest cost and LOS, whereas Finger Lakes hospitals are the lowest relative to the state average.
+- [x] NYU Lutheran Medical Center has the highest cost while Memorial Hospital for Cancer and Allied Diseases has the highes LOS. The result may due to case complexity rather than lower efficiency. More studies are needed to arrive a sound conclusion.
+- [x] There is a negative corelation between Surgical Program Size and LOS and Cost, however, the Surgical Program Size is not among the top influencers to LOS and/or Cost considering illness severity and patient disposition.
 
 **************************
 
 ## Key Skills Demonstrated in the Project:
 
-- [x] Power Query (Basic and Advanced Operations) 
+- [x] Exploratory Data Analysis
 - [x] Basic and complex DAX formulas
 - [x] Data modeling 
-- [x] Dashboard designing principles
-- [x] Feature list, metric (Power BI measures) list and documentation
-- [x] Using bookmarks and switch between visuals
-- [x] Present insights and train users on dashboard features
-- [x] Visualizations (Bar/column/line chart, donut chart, ribbon chart, KPI card and data table)
+- [x] Dashboard/Report designing principles
+- [x] Visualizations (Bar/column/line chart, donut chart, KPI card and gauge chart)
 - [x] Filters, ranks and page navigation
-- [x] Insurance industry domain knowledge
+- [x] Root Cause Analysis (Key Influencers/Top segment)
+- [x] Framework for healthcare quality: Safety, Effectiveness, Timeliness, Patient-Centered, Equity and Efficiency
+- [x] Hospital Efficiency Measures: LOS and Cost per Discharge
+- [x] Healcare concepts: inpatient, discharge, disposition, elective
+- [x] Hospital/Healthcare data analytics
